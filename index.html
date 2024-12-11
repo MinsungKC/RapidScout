@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapidScout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RapidScout</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#schedule">Event Schedule</a></li>
+                <li><a href="#real-time">Real-Time Stats</a></li>
+                <li><a href="#notes">Robot Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="predictions">
+                <h3>Match Predictions</h3>
+                <div class="prediction-cards">
+                    <!-- Predictions will be dynamically injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Schedule Section -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Match</th>
+                        <th>Teams</th>
+                    </tr>
+                </thead>
+                <tbody id="schedule-body">
+                    <!-- Schedule data will populate here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Real-Time Stats Section -->
+        <section id="real-time">
+            <h2>Real-Time Stats</h2>
+            <div id="stats-display">
+                <!-- Stats will be dynamically updated here -->
+            </div>
+        </section>
+
+        <!-- Robot Notes Section -->
+        <section id="notes">
+            <h2>Robot Notes</h2>
+            <form id="notes-form">
+                <label for="robot-name">Robot Name/Team:</label>
+                <input type="text" id="robot-name" name="robot-name" required>
+                <label for="note">Note:</label>
+                <textarea id="note" name="note" rows="4" required></textarea>
+                <button type="submit">Add Note</button>
+            </form>
+            <ul id="notes-list">
+                <!-- Notes will appear here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 RapidScout</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
